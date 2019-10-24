@@ -5,10 +5,12 @@ branding:
   icon: 'database'
   color: 'green'
 inputs:
-  elasticsearch version:
+  elasticsearch-version:
     description: 'Version of EleasticSearch to use'
     required: false
     default: 'latest'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.elasticsearch-version }}
