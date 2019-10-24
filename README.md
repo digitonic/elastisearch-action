@@ -11,9 +11,9 @@ See [action.yml](action.yml)
 Basic:
 ```yaml
 steps:
-- uses: digitonic/elastisearch-action@v1.0.0
+- uses: digitonic/elastisearch-action@0.0.
   with:
-    elesticsearch version: '6'
+    elesticsearch-version: '6.3.1'
 ```
 
 # License
